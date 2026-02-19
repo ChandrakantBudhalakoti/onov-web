@@ -7,6 +7,7 @@ import MobilePreview from './components/MobilePreview';
 import EnterpriseSolutions from './components/EnterpriseSolutions';
 import TrustSecurity from './components/TrustSecurity';
 import CTAAndContact from './components/CTAAndContact';
+import Footer from './components/Footer';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <EnterpriseSolutions />
       <TrustSecurity />
       <CTAAndContact />
+      <Footer />
     </main>
   );
 }

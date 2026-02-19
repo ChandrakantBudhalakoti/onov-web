@@ -45,10 +45,10 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-gray-900 mb-4">COMPANY</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="text-gray-600 hover:text-[#2563EB] transition-colors">About ONOV</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-[#2563EB] transition-colors">Mission & Values</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-[#2563EB] transition-colors">Team</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-[#2563EB] transition-colors">Careers</a></li>
+              <li><a href="/about" className="text-gray-600 hover:text-[#2563EB] transition-colors">About ONOV</a></li>
+              <li><a href="/mission" className="text-gray-600 hover:text-[#2563EB] transition-colors">Mission & Values</a></li>
+              <li><a href="/team" className="text-gray-600 hover:text-[#2563EB] transition-colors">Team</a></li>
+              <li><a href="/careers" className="text-gray-600 hover:text-[#2563EB] transition-colors">Careers</a></li>
             </ul>
           </div>
 
@@ -56,10 +56,10 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-gray-900 mb-4">PLATFORM</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="text-gray-600 hover:text-[#2563EB] transition-colors">Features</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-[#2563EB] transition-colors">How It Works</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-[#2563EB] transition-colors">Community Hub</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-[#2563EB] transition-colors">Live Streaming</a></li>
+              <li><a href="#features" className="text-gray-600 hover:text-[#2563EB] transition-colors">Features</a></li>
+              <li><a href="#features" className="text-gray-600 hover:text-[#2563EB] transition-colors">How It Works</a></li>
+              <li><a href="/community" className="text-gray-600 hover:text-[#2563EB] transition-colors">Community Hub</a></li>
+              <li><a href="/live-streaming" className="text-gray-600 hover:text-[#2563EB] transition-colors">Live Streaming</a></li>
             </ul>
           </div>
 
@@ -67,10 +67,10 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-gray-900 mb-4">RESOURCES</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="text-gray-600 hover:text-[#2563EB] transition-colors">Help Center</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-[#2563EB] transition-colors">Legal Center</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-[#2563EB] transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-[#2563EB] transition-colors">Press Kit</a></li>
+              <li><a href="/help" className="text-gray-600 hover:text-[#2563EB] transition-colors">Help Center</a></li>
+              <li><a href="/legal" className="text-gray-600 hover:text-[#2563EB] transition-colors">Legal Center</a></li>
+              <li><a href="/privacy" className="text-gray-600 hover:text-[#2563EB] transition-colors">Privacy Policy</a></li>
+              <li><a href="/press-kit" className="text-gray-600 hover:text-[#2563EB] transition-colors">Press Kit</a></li>
             </ul>
           </div>
 
@@ -101,19 +101,19 @@ export default function Footer() {
         {/* Social Icons */}
         <div className="py-8 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex gap-4">
-            <a href="#" aria-label="Twitter" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#2563EB] hover:text-white transition-colors">
+            <a href="https://twitter.com/onov" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#2563EB] hover:text-white transition-colors">
               𝕏
             </a>
-            <a href="#" aria-label="Instagram" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#2563EB] hover:text-white transition-colors">
+            <a href="https://instagram.com/onov" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#2563EB] hover:text-white transition-colors">
               📷
             </a>
-            <a href="#" aria-label="LinkedIn" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#2563EB] hover:text-white transition-colors">
+            <a href="https://linkedin.com/company/onov" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#2563EB] hover:text-white transition-colors">
               💼
             </a>
-            <a href="#" aria-label="Facebook" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#2563EB] hover:text-white transition-colors">
+            <a href="https://facebook.com/onov" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#2563EB] hover:text-white transition-colors">
               f
             </a>
-            <a href="#" aria-label="GitHub" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#2563EB] hover:text-white transition-colors">
+            <a href="https://github.com/onov" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#2563EB] hover:text-white transition-colors">
               ⚡
             </a>
           </div>
@@ -122,9 +122,9 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row items-center gap-8 text-sm text-gray-600">
             <p>© {currentYear} ONOV INC. BUILT WITH PRECISION IN THE US</p>
             <div className="flex gap-6">
-              <a href="#" className="hover:text-[#2563EB] transition-colors">PRIVACY POLICY</a>
-              <a href="#" className="hover:text-[#2563EB] transition-colors">TERMS OF SERVICE</a>
-              <a href="#" className="hover:text-[#2563EB] transition-colors">COOKIES</a>
+              <a href="/privacy-policy" className="hover:text-[#2563EB] transition-colors">PRIVACY POLICY</a>
+              <a href="/terms-of-service" className="hover:text-[#2563EB] transition-colors">TERMS OF SERVICE</a>
+              <a href="/cookies" className="hover:text-[#2563EB] transition-colors">COOKIES</a>
             </div>
           </div>
         </div>

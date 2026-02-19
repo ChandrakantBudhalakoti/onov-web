@@ -33,7 +33,7 @@ const features = [
 
 export default function PlatformOverview() {
   return (
-    <section className="py-20 px-6 bg-white">
+    <section id="features" className="py-20 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">

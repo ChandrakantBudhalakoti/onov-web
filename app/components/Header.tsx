@@ -25,26 +25,10 @@ export default function Header() {
             <a href="#solutions" className="text-gray-700 hover:text-[#2563EB] transition-colors">
               Solutions
             </a>
-            <a href="#technology" className="text-gray-700 hover:text-[#2563EB] transition-colors">
-              Technology
-            </a>
-            <a href="#enterprise" className="text-gray-700 hover:text-[#2563EB] transition-colors">
-              Enterprise
-            </a>
             <a href="#contact" className="text-gray-700 hover:text-[#2563EB] transition-colors">
               Contact
             </a>
           </nav>
-
-          {/* Actions */}
-          <div className="hidden md:flex items-center gap-4">
-            <button className="px-6 py-2 text-[#0B3C5D] font-semibold hover:text-[#2563EB] transition-colors">
-              Log In
-            </button>
-            <button className="px-6 py-2 bg-[#0B3C5D] text-white rounded-full font-semibold hover:bg-[#0D4A70] transition-colors">
-              Join ONOV
-            </button>
-          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -63,13 +47,7 @@ export default function Header() {
           <nav className="md:hidden flex flex-col gap-4 py-4 border-t border-gray-200">
             <a href="#features" className="text-gray-700 hover:text-[#2563EB]">Features</a>
             <a href="#solutions" className="text-gray-700 hover:text-[#2563EB]">Solutions</a>
-            <a href="#technology" className="text-gray-700 hover:text-[#2563EB]">Technology</a>
-            <a href="#enterprise" className="text-gray-700 hover:text-[#2563EB]">Enterprise</a>
             <a href="#contact" className="text-gray-700 hover:text-[#2563EB]">Contact</a>
-            <div className="flex flex-col gap-2 pt-2">
-              <button className="px-6 py-2 text-[#0B3C5D] font-semibold">Log In</button>
-              <button className="px-6 py-2 bg-[#0B3C5D] text-white rounded-full font-semibold">Join ONOV</button>
-            </div>
           </nav>
         )}
       </div>

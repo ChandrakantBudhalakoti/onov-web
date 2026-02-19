@@ -1,31 +1,33 @@
+import { Cloud, RefreshCw, CreditCard, Zap, Rocket, Globe } from 'lucide-react';
+
 const techFeatures = [
   {
-    icon: '☁️',
+    Icon: Cloud,
     title: 'Cloud Native',
     description: 'Built for high-performance cloud-native architecture.',
   },
   {
-    icon: '🔄',
+    Icon: RefreshCw,
     title: 'Microservices',
     description: 'Scalable microservices for modular updates and feature expansion.',
   },
   {
-    icon: '💳',
+    Icon: CreditCard,
     title: 'Secure Payments',
     description: 'Integrated PCI-compliant secure payment processing for donations.',
   },
   {
-    icon: '⚡',
+    Icon: Zap,
     title: 'Real-time Push',
     description: 'Highly optimized real-time event-driven notifications system.',
   },
   {
-    icon: '🚀',
+    Icon: Rocket,
     title: 'Live Sync',
     description: 'Low-latency live stream data synchronization for massive audiences.',
   },
   {
-    icon: '🌐',
+    Icon: Globe,
     title: 'Edge Deployment',
     description: 'Distributed edge compute for fastest response times everywhere.',
   },
@@ -59,7 +61,12 @@ export default function ScalabilitySection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {techFeatures.map((feature, index) => (
                 <div key={index} className="flex gap-4">
-                  <div className="text-3xl flex-shrink-0">{feature.icon}</div>
+                  <div className="flex-shrink-0">
+                    {(() => {
+                      const IconComponent = feature.Icon;
+                      return <IconComponent className="w-8 h-8 text-[#2563EB]" strokeWidth={1.5} />;
+                    })()}
+                  </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-1">{feature.title}</h4>
                     <p className="text-gray-600 text-sm">{feature.description}</p>

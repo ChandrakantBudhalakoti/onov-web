@@ -1,8 +1,10 @@
+import { Lock, ShieldCheck, Shield, Globe, Check } from 'lucide-react';
+
 const securityFeatures = [
-  { icon: '🔒', title: 'AES-256 Encryption', description: 'All sensitive user data is encrypted with military-grade protocols.' },
-  { icon: '🛡️', title: 'Verified Identity', description: 'Strict verification processes for high-impact profiles to ensure authenticity.' },
-  { icon: '🔐', title: 'Data Privacy', description: 'Zero-knowledge architecture means we don\'t sell your private data.' },
-  { icon: '🌐', title: 'Edge Security', description: 'DDoS protection and real-time threat monitoring at every edge node.' },
+  { Icon: Lock, title: 'AES-256 Encryption', description: 'All sensitive user data is encrypted with military-grade protocols.' },
+  { Icon: ShieldCheck, title: 'Verified Identity', description: 'Strict verification processes for high-impact profiles to ensure authenticity.' },
+  { Icon: Shield, title: 'Data Privacy', description: 'Zero-knowledge architecture means we don\'t sell your private data.' },
+  { Icon: Globe, title: 'Edge Security', description: 'DDoS protection and real-time threat monitoring at every edge node.' },
 ];
 
 const compliances = [
@@ -41,7 +43,7 @@ export default function TrustSecurity() {
               {compliances.map((compliance, index) => (
                 <div key={index} className="flex items-center gap-3 text-white">
                   <div className="w-6 h-6 rounded-full bg-[#2563EB] flex items-center justify-center flex-shrink-0">
-                    <span className="text-sm">✓</span>
+                    <Check className="w-3 h-3 text-white" strokeWidth={3} />
                   </div>
                   <span className="font-semibold">{compliance}</span>
                 </div>
@@ -56,7 +58,12 @@ export default function TrustSecurity() {
                 key={index}
                 className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/15 transition-all duration-300"
               >
-                <div className="text-4xl mb-4">{feature.icon}</div>
+                <div className="mb-4">
+                  {(() => {
+                    const IconComponent = feature.Icon;
+                    return <IconComponent className="w-10 h-10 text-blue-300" strokeWidth={1.5} />;
+                  })()}
+                </div>
                 <h3 className="text-lg font-bold text-white mb-2">{feature.title}</h3>
                 <p className="text-gray-300 text-sm leading-relaxed">{feature.description}</p>
               </div>

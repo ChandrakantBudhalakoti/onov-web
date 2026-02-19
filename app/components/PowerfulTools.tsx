@@ -1,41 +1,43 @@
+import { User, Film, Mic, BarChart3, Ticket, CreditCard, Users, Megaphone } from 'lucide-react';
+
 const tools = [
   {
-    icon: '👤',
+    Icon: User,
     title: 'Smart User Profiles',
     description: 'Free and premium tier profiles with verified statuses and influence scores.',
   },
   {
-    icon: '🎬',
+    Icon: Film,
     title: 'Political Reels',
     description: 'Create and share viral political content and short-form video messages.',
   },
   {
-    icon: '🎤',
+    Icon: Mic,
     title: 'Live Debates',
     description: 'Broadcast live video conferencing debates with real-time community engagement.',
   },
   {
-    icon: '📊',
+    Icon: BarChart3,
     title: 'Polling & Voting',
     description: 'Host secure and verifiable polls to gauge community opinion and collect data.',
   },
   {
-    icon: '🎫',
+    Icon: Ticket,
     title: 'Event Ticketing',
     description: 'Complete booking and management system for nationwide political events.',
   },
   {
-    icon: '💳',
+    Icon: CreditCard,
     title: 'Fundraising System',
     description: 'Built-in secure payment gateway for political campaign contributions.',
   },
   {
-    icon: '👥',
+    Icon: Users,
     title: 'Community Tools',
     description: 'Advanced moderation and management tools for group leaders and organizations.',
   },
   {
-    icon: '📢',
+    Icon: Megaphone,
     title: 'Promotion & Ads',
     description: 'Business-grade promotion and targeted advertising for vision and messages.',
   },
@@ -73,7 +75,12 @@ export default function PowerfulTools() {
               key={index}
               className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/15 transition-all duration-300 hover:border-[#2563EB]/50"
             >
-              <div className="text-4xl mb-4">{tool.icon}</div>
+              <div className="mb-4">
+                {(() => {
+                  const IconComponent = tool.Icon;
+                  return <IconComponent className="w-10 h-10 text-blue-300" strokeWidth={1.5} />;
+                })()}
+              </div>
               <h3 className="text-lg font-bold text-white mb-2">{tool.title}</h3>
               <p className="text-gray-300 text-sm leading-relaxed">{tool.description}</p>
             </div>

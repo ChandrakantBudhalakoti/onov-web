@@ -1,5 +1,6 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { Check } from 'lucide-react';
 
 export const metadata = {
   title: 'About ONOV - Our Mission & Vision',
@@ -29,23 +30,23 @@ export default function About() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Values</h2>
               <ul className="space-y-3 text-lg text-gray-600">
                 <li className="flex gap-3">
-                  <span className="text-[#2563EB] font-bold">✓</span>
+                  <Check className="w-5 h-5 text-[#2563EB] flex-shrink-0 mt-0.5" strokeWidth={3} />
                   <span><strong>Security First:</strong> Military-grade encryption and data privacy protection</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-[#2563EB] font-bold">✓</span>
+                  <Check className="w-5 h-5 text-[#2563EB] flex-shrink-0 mt-0.5" strokeWidth={3} />
                   <span><strong>Transparency:</strong> Open, honest communication with our users</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-[#2563EB] font-bold">✓</span>
+                  <Check className="w-5 h-5 text-[#2563EB] flex-shrink-0 mt-0.5" strokeWidth={3} />
                   <span><strong>Community:</strong> Empowering collective voices and engagement</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-[#2563EB] font-bold">✓</span>
+                  <Check className="w-5 h-5 text-[#2563EB] flex-shrink-0 mt-0.5" strokeWidth={3} />
                   <span><strong>Innovation:</strong> Continuously improving our platform and features</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-[#2563EB] font-bold">✓</span>
+                  <Check className="w-5 h-5 text-[#2563EB] flex-shrink-0 mt-0.5" strokeWidth={3} />
                   <span><strong>Integrity:</strong> Operating with the highest ethical standards</span>
                 </li>
               </ul>

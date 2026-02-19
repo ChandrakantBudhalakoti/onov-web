@@ -1,6 +1,8 @@
+import { Mic, Newspaper, Building2, Users, ArrowRight } from 'lucide-react';
+
 const solutions = [
   {
-    icon: '🎤',
+    Icon: Mic,
     title: 'Political Leaders',
     color: 'border-[#2563EB]',
     features: [
@@ -10,7 +12,7 @@ const solutions = [
     ],
   },
   {
-    icon: '📰',
+    Icon: Newspaper,
     title: 'Journalists',
     color: 'border-[#2563EB]',
     features: [
@@ -20,7 +22,7 @@ const solutions = [
     ],
   },
   {
-    icon: '🏢',
+    Icon: Building2,
     title: 'Businesses',
     color: 'border-orange-500',
     features: [
@@ -30,7 +32,7 @@ const solutions = [
     ],
   },
   {
-    icon: '👥',
+    Icon: Users,
     title: 'Communities',
     color: 'border-red-500',
     features: [
@@ -79,12 +81,17 @@ export default function EnterpriseSolutions() {
                   key={index}
                   className={`p-6 border-l-4 ${borderColorClass} bg-gradient-to-b from-gray-50 to-white rounded-lg hover:shadow-lg transition-all`}
                 >
-                  <div className="text-4xl mb-4">{solution.icon}</div>
+                  <div className="mb-4">
+                    {(() => {
+                      const IconComponent = solution.Icon;
+                      return <IconComponent className="w-10 h-10 text-[#2563EB]" strokeWidth={1.5} />;
+                    })()}
+                  </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4">{solution.title}</h3>
                   <ul className="space-y-2">
                     {solution.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="text-gray-600 text-sm flex gap-2">
-                        <span className="text-[#2563EB] font-bold">→</span>
+                        <ArrowRight className="w-4 h-4 text-[#2563EB] font-bold flex-shrink-0" />
                         {feature}
                       </li>
                     ))}

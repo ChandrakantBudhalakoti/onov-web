@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { ArrowRight, Mail, Phone, MapPin, Check } from 'lucide-react';
 
 export default function CTAAndContact() {
   const [formData, setFormData] = useState({
@@ -49,8 +50,9 @@ export default function CTAAndContact() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-3 bg-white text-[#0B3C5D] rounded-full font-semibold hover:bg-gray-100 transition-colors">
-              GET STARTED →
+            <button className="px-8 py-3 bg-white text-[#0B3C5D] rounded-full font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2">
+              GET STARTED
+              <ArrowRight className="w-4 h-4" />
             </button>
             <button className="px-8 py-3 border-2 border-white text-white rounded-full font-semibold hover:bg-white/10 transition-colors">
               REQUEST DEMO
@@ -85,8 +87,8 @@ export default function CTAAndContact() {
               {/* Contact Details */}
               <div className="space-y-6">
                 <div className="flex gap-4 items-start">
-                  <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center flex-shrink-0 text-lg">
-                    ✉️
+                  <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-5 h-5 text-gray-600" />
                   </div>
                   <div>
                     <div className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Email Our Team</div>
@@ -97,8 +99,8 @@ export default function CTAAndContact() {
                 </div>
 
                 <div className="flex gap-4 items-start">
-                  <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center flex-shrink-0 text-lg">
-                    📞
+                  <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-5 h-5 text-gray-600" />
                   </div>
                   <div>
                     <div className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Call Our Office</div>
@@ -109,8 +111,8 @@ export default function CTAAndContact() {
                 </div>
 
                 <div className="flex gap-4 items-start">
-                  <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center flex-shrink-0 text-lg">
-                    📍
+                  <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-5 h-5 text-gray-600" />
                   </div>
                   <div>
                     <div className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Global HQ</div>
@@ -190,14 +192,16 @@ export default function CTAAndContact() {
 
                 <button
                   type="submit"
-                  className="w-full px-8 py-3 bg-[#0B3C5D] text-white rounded-full font-semibold hover:bg-[#0D4A70] transition-colors uppercase text-sm font-bold tracking-wide"
+                  className="w-full px-8 py-3 bg-[#0B3C5D] text-white rounded-full font-semibold hover:bg-[#0D4A70] transition-colors uppercase text-sm font-bold tracking-wide flex items-center justify-center gap-2"
                 >
-                  SEND INQUIRY ✉️
+                  SEND INQUIRY
+                  <Mail className="w-4 h-4" />
                 </button>
 
                 {submitted && (
-                  <div className="text-center text-green-600 text-sm font-semibold">
-                    ✓ We'll respond within 12-24 business hours.
+                  <div className="text-center text-green-600 text-sm font-semibold flex items-center justify-center gap-2">
+                    <Check className="w-4 h-4 flex-shrink-0" />
+                    We'll respond within 12-24 business hours.
                   </div>
                 )}
               </form>

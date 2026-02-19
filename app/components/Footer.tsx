@@ -1,3 +1,5 @@
+import { Mail, Phone, MapPin, Twitter, Instagram, Linkedin, Facebook, Github } from 'lucide-react';
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -18,8 +20,9 @@ export default function Footer() {
               placeholder="Enter your email"
               className="flex-1 md:flex-none px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2563EB]"
             />
-            <button className="px-6 py-3 bg-[#0B3C5D] text-white rounded-lg font-semibold hover:bg-[#0D4A70] transition-colors">
-              Subscribe ✉️
+            <button className="px-6 py-3 bg-[#0B3C5D] text-white rounded-lg font-semibold hover:bg-[#0D4A70] transition-colors flex items-center gap-2">
+              Subscribe
+              <Mail className="w-4 h-4" />
             </button>
           </div>
         </div>
@@ -79,19 +82,19 @@ export default function Footer() {
             <h4 className="font-bold text-gray-900 mb-4">CONTACT</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
-                <span>📧</span>
+                <Mail className="w-4 h-4 text-gray-600 flex-shrink-0" />
                 <a href="mailto:hello@onov.com" className="text-gray-600 hover:text-[#2563EB] transition-colors">
                   hello@onov.com
                 </a>
               </li>
               <li className="flex items-center gap-2">
-                <span>📞</span>
+                <Phone className="w-4 h-4 text-gray-600 flex-shrink-0" />
                 <a href="tel:+15551234567" className="text-gray-600 hover:text-[#2563EB] transition-colors">
                   +1 (555) 123-4567
                 </a>
               </li>
               <li className="flex items-center gap-2">
-                <span>📍</span>
+                <MapPin className="w-4 h-4 text-gray-600 flex-shrink-0" />
                 <span className="text-gray-600">San Francisco, CA</span>
               </li>
             </ul>
@@ -102,25 +105,27 @@ export default function Footer() {
         <div className="py-8 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex gap-4">
             <a href="https://twitter.com/onov" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#2563EB] hover:text-white transition-colors">
-              𝕏
+              <Twitter className="w-5 h-5" />
             </a>
             <a href="https://instagram.com/onov" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#2563EB] hover:text-white transition-colors">
-              📷
+              <Instagram className="w-5 h-5" />
             </a>
             <a href="https://linkedin.com/company/onov" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#2563EB] hover:text-white transition-colors">
-              💼
+              <Linkedin className="w-5 h-5" />
             </a>
             <a href="https://facebook.com/onov" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#2563EB] hover:text-white transition-colors">
-              f
+              <Facebook className="w-5 h-5" />
             </a>
             <a href="https://github.com/onov" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#2563EB] hover:text-white transition-colors">
-              ⚡
+              <Github className="w-5 h-5" />
             </a>
           </div>
 
           {/* Copyright */}
           <div className="flex flex-col md:flex-row items-center gap-8 text-sm text-gray-600">
-            <p>© {currentYear} ONOV INC. BUILT WITH PRECISION IN THE US</p>
+            <p className="flex items-center gap-1">
+              <span>©</span> {currentYear} ONOV INC. BUILT WITH PRECISION IN THE US
+            </p>
             <div className="flex gap-6">
               <a href="/privacy-policy" className="hover:text-[#2563EB] transition-colors">PRIVACY POLICY</a>
               <a href="/terms-of-service" className="hover:text-[#2563EB] transition-colors">TERMS OF SERVICE</a>

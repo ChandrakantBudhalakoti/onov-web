@@ -1,25 +1,27 @@
+import Image from 'next/image';
+import { ArrowRight, Hash, Signal, Battery, Play, Music, Facebook } from 'lucide-react';
+
 export default function HeroSection() {
   return (
-    <section className="min-h-screen pt-32 pb-16 px-6 bg-gradient-to-br from-blue-50 via-white to-white">
+    <section className="min-h-screen pt-32 pb-16 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="flex flex-col gap-6">
-            <div className="inline-flex items-center gap-2 w-fit">
-              <div className="w-1 h-1 rounded-full bg-[#2563EB]"></div>
-              <span className="text-xs font-bold uppercase tracking-widest text-gray-500">
+            {/* Tagline - light blue rounded pill with hashtag */}
+            <div className="inline-flex items-center gap-2 w-fit px-3 py-1.5 rounded-full bg-blue-100">
+              <Hash className="w-4 h-4 text-[#2563EB]" strokeWidth={2.5} />
+              <span className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">
                 THE FUTURE OF POLITICAL ENGAGEMENT
               </span>
             </div>
 
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-              Where
+              <span className="text-[#0B3C5D]">Where</span>
               <br />
-              <span className="text-gray-700">Conversations</span>
+              <span className="text-[#0B3C5D]">Conversations</span>
               <br />
-              <span className="bg-gradient-to-r from-[#0B3C5D] to-[#2563EB] bg-clip-text text-transparent">
-                Shape the Future.
-              </span>
+              <span className="text-[#2563EB]">Shape the Future.</span>
             </h1>
 
             <p className="text-lg text-gray-600 max-w-md leading-relaxed">
@@ -29,73 +31,93 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <button className="px-8 py-3 bg-[#0B3C5D] text-white rounded-full font-semibold hover:bg-[#0D4A70] transition-colors flex items-center gap-2">
                 Join ONOV
-                <span>→</span>
+                <ArrowRight className="w-5 h-5 text-white" />
               </button>
               <button className="px-8 py-3 border-2 border-[#0B3C5D] text-[#0B3C5D] rounded-full font-semibold hover:bg-blue-50 transition-colors">
                 Request Demo
               </button>
             </div>
 
-            {/* Stats */}
-            <div className="flex gap-8 pt-8 flex-wrap">
-              <div>
-                <div className="text-3xl font-bold text-[#0B3C5D]">1.2M+</div>
-                <div className="text-sm text-gray-500 uppercase tracking-wide">Users</div>
+            {/* Stats with Play Button */}
+            <div className="flex items-center gap-8 pt-8 flex-wrap">
+              <div className="flex gap-8">
+                <div>
+                  <div className="text-3xl font-bold text-[#0B3C5D]">1.2M+</div>
+                  <div className="text-sm text-gray-500 uppercase tracking-wide">Users</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-[#0B3C5D]">450+</div>
+                  <div className="text-sm text-gray-500 uppercase tracking-wide">Communities</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-[#0B3C5D]">85k</div>
+                  <div className="text-sm text-gray-500 uppercase tracking-wide">Debates</div>
+                </div>
               </div>
-              <div>
-                <div className="text-3xl font-bold text-[#0B3C5D]">450+</div>
-                <div className="text-sm text-gray-500 uppercase tracking-wide">Communities</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-[#0B3C5D]">85k</div>
-                <div className="text-sm text-gray-500 uppercase tracking-wide">Debates</div>
+              <div className="w-12 h-12 rounded-lg bg-gray-200 flex items-center justify-center flex-shrink-0">
+                <Play className="w-5 h-5 text-red-500 fill-red-500 ml-0.5" strokeWidth={2} />
               </div>
             </div>
           </div>
 
           {/* Right - iPhone Mockup */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative w-80 h-96">
+            <div className="relative w-80 h-[520px]">
               {/* iPhone Frame */}
               <div className="absolute inset-0 bg-gray-900 rounded-3xl shadow-2xl border-8 border-gray-900 overflow-hidden">
-                {/* iPhone Screen */}
-                <div className="w-full h-full bg-gradient-to-br from-blue-600 via-purple-600 to-blue-900 relative overflow-hidden">
+                {/* Phone Screen - banner background */}
+                <div className="w-full h-full relative overflow-hidden">
+                  <Image
+                    src="/assets/images/banner.jpeg"
+                    alt="App preview"
+                    fill
+                    className="object-cover"
+                    sizes="320px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-blue-900/40 to-purple-900/30" />
+
                   {/* Status Bar */}
-                  <div className="bg-black/20 px-6 py-2 text-white text-xs flex justify-between items-center">
-                    <span>5G</span>
-                    <span>●●●●●</span>
+                  <div className="absolute top-0 left-0 right-0 z-10 px-6 py-3 text-white text-xs flex justify-between items-center">
+                    <span>9:41</span>
+                    <div className="flex items-center gap-1">
+                      <Signal className="w-3.5 h-3.5" />
+                      <span>5G</span>
+                      <Battery className="w-4 h-4" />
+                    </div>
                   </div>
 
-                  {/* App Content */}
-                  <div className="p-4 text-white space-y-4">
-                    {/* Search Bar */}
-                    <div className="bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2 border border-white/20">
-                      <span className="text-lg">🔍</span>
-                      <span className="text-sm">John Doe started a live debate</span>
+                  {/* Notification - white bubble at top */}
+                  <div className="absolute top-14 left-4 right-4 z-10 bg-white rounded-2xl shadow-lg p-3 flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-[#2563EB] flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+                      JD
                     </div>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-medium text-gray-900">John Doe started a live debate</p>
+                    </div>
+                    <span className="px-2 py-0.5 rounded-full bg-red-500 text-white text-xs font-bold flex-shrink-0">
+                      LIVE
+                    </span>
+                  </div>
 
-                    {/* App Icons Grid */}
-                    <div className="grid grid-cols-2 gap-3 mt-8">
-                      <div className="bg-red-500 rounded-2xl p-4 flex items-center justify-center h-20">
-                        <span className="text-2xl">▶</span>
+                  {/* App Icons at bottom */}
+                  <div className="absolute bottom-8 left-4 right-4 z-10 flex justify-around">
+                    <div className="flex flex-col items-center gap-2">
+                      <div className="w-14 h-14 rounded-2xl bg-red-500 flex items-center justify-center">
+                        <Music className="w-7 h-7 text-white" strokeWidth={2} />
                       </div>
-                      <div className="bg-blue-500 rounded-2xl p-4 flex items-center justify-center h-20">
-                        <span className="text-2xl">f</span>
+                      <span className="text-xs text-white/90 font-medium">Music</span>
+                    </div>
+                    <div className="flex flex-col items-center gap-2">
+                      <div className="w-14 h-14 rounded-2xl bg-[#1877F2] flex items-center justify-center">
+                        <Facebook className="w-7 h-7 text-white" strokeWidth={2} />
                       </div>
+                      <span className="text-xs text-white/90 font-medium">Facebook</span>
                     </div>
                   </div>
 
                   {/* Notch */}
-                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-7 bg-black rounded-b-2xl"></div>
+                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-7 bg-black rounded-b-2xl z-20" />
                 </div>
-              </div>
-
-              {/* Floating Elements */}
-              <div className="absolute -right-4 bottom-24 bg-white rounded-2xl shadow-lg p-3 w-16 h-16 flex items-center justify-center">
-                <span className="text-2xl">💬</span>
-              </div>
-              <div className="absolute -left-4 top-12 bg-white rounded-2xl shadow-lg p-3 w-16 h-16 flex items-center justify-center">
-                <span className="text-2xl">▶</span>
               </div>
             </div>
           </div>

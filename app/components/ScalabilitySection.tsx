@@ -35,9 +35,9 @@ const techFeatures = [
 
 export default function ScalabilitySection() {
   return (
-    <section className="py-20 px-6 bg-white">
+    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 items-center">
           {/* Left Content */}
           <div>
             <div className="inline-flex items-center gap-2 mb-4">
@@ -47,18 +47,18 @@ export default function ScalabilitySection() {
               </span>
             </div>
 
-            <h2 className="text-4xl lg:text-5xl font-bold mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
               Built for <span className="text-gray-700">Scalability</span>
               <br />
               &amp; <span className="text-[#2563EB]">Absolute Security</span>.
             </h2>
 
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 leading-relaxed">
               Our platform architecture is designed to handle millions of concurrent users while ensuring data privacy and transactional security.
             </p>
 
             {/* Tech Features Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
               {techFeatures.map((feature, index) => (
                 <div key={index} className="flex gap-4">
                   <div className="flex-shrink-0">
@@ -78,9 +78,9 @@ export default function ScalabilitySection() {
 
           {/* Right - System Diagram */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-md">
+            <div className="relative w-full max-w-md mx-auto">
               {/* Diagram Container */}
-              <div className="bg-gradient-to-br from-[#0B3C5D] to-[#0D4A70] rounded-3xl p-8 text-white relative overflow-hidden">
+              <div className="bg-gradient-to-br from-[#0B3C5D] to-[#0D4A70] rounded-2xl sm:rounded-3xl p-6 sm:p-8 text-white relative overflow-hidden">
                 {/* Background Grid */}
                 <div className="absolute inset-0 opacity-10">
                   <div className="grid grid-cols-3 gap-4 h-full p-4">

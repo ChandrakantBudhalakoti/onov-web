@@ -45,7 +45,7 @@ const tools = [
 
 export default function PowerfulTools() {
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-[#0B3C5D] via-[#0D4A70] to-[#1a5a8a]">
+    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-gradient-to-br from-[#0B3C5D] via-[#0D4A70] to-[#1a5a8a]">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="mb-16">
@@ -55,21 +55,21 @@ export default function PowerfulTools() {
               CORE ECOSYSTEM
             </span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             Powerful Tools for
             <br />
             <span className="text-[#2563EB]">Modern Leadership.</span>
           </h2>
-          <p className="text-lg text-gray-300 max-w-3xl mb-8">
+          <p className="text-base sm:text-lg text-gray-300 max-w-3xl mb-6 sm:mb-8">
             Experience the next generation of social engagement. Every tool you need, integrated into one seamless platform.
           </p>
-          <button className="px-8 py-3 bg-[#2563EB] text-white rounded-full font-semibold hover:bg-[#3B82F6] transition-colors uppercase text-sm font-bold tracking-wide">
+          <button className="w-full sm:w-auto px-8 py-3 bg-[#2563EB] text-white rounded-full font-semibold hover:bg-[#3B82F6] transition-colors uppercase text-sm font-bold tracking-wide">
             Explore All Features
           </button>
         </div>
 
         {/* Tools Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {tools.map((tool, index) => (
             <div
               key={index}

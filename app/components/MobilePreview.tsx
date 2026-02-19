@@ -26,25 +26,25 @@ const screens = [
 
 export default function MobilePreview() {
   return (
-    <section className="py-20 px-6 bg-slate-50">
+    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-slate-50">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-16">
           <span className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">
             MOBILE EXPERIENCE
           </span>
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4 mt-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 mt-4 px-2">
             <span className="text-[#0B3C5D]">Powerful Features</span>
             <br />
             <span className="text-[#2563EB]">In Your Pocket.</span>
           </h2>
-          <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto px-2">
             Experience ONOV with our native mobile application designed for real-time engagement and mobility.
           </p>
         </div>
 
         {/* Phones with descriptions below each */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-10 sm:mb-16">
           {screens.map((screen, index) => (
             <div
               key={index}
@@ -53,7 +53,7 @@ export default function MobilePreview() {
               {/* Phone mockup */}
               <div className="relative flex-shrink-0 mb-6">
                 <div
-                  className="relative w-[200px] h-[420px] rounded-[2.5rem] p-2 overflow-visible"
+                  className="relative w-[140px] h-[300px] sm:w-[170px] sm:h-[360px] md:w-[200px] md:h-[420px] rounded-[1.75rem] sm:rounded-[2.5rem] p-1.5 sm:p-2 overflow-visible mx-auto"
                   style={{
                     background: 'linear-gradient(145deg, #0B3C5D 0%, #0D4A70 50%, #0B3C5D 100%)',
                     boxShadow: `
@@ -64,17 +64,17 @@ export default function MobilePreview() {
                   }}
                 >
                 {/* Inner screen bezel */}
-                <div className="relative w-full h-full rounded-[2rem] overflow-hidden bg-black">
+                <div className="relative w-full h-full rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden bg-black">
                   {/* Notch */}
                   <div
-                    className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-6 rounded-b-xl z-20"
+                    className="absolute top-0 left-1/2 -translate-x-1/2 w-14 h-5 sm:w-16 sm:h-5 md:w-20 md:h-6 rounded-b-lg sm:rounded-b-xl z-20"
                     style={{
                       background: 'linear-gradient(180deg, #0d0d0d 0%, #1a1a1a 100%)',
                       boxShadow: 'inset 0 2px 4px rgba(0,0,0,0.5)',
                     }}
                   />
                   {/* Screen content */}
-                  <div className="absolute top-6 left-0 right-0 bottom-0 rounded-b-[2rem] overflow-hidden">
+                  <div className="absolute top-5 sm:top-6 left-0 right-0 bottom-0 rounded-b-[1.5rem] sm:rounded-b-[2rem] overflow-hidden">
                     <Image
                       src={screen.image}
                       alt={screen.title}
@@ -88,17 +88,17 @@ export default function MobilePreview() {
               </div>
 
               {/* Title and description below phone */}
-              <h3 className="text-lg font-bold text-[#0B3C5D] mb-2">{screen.title}</h3>
-              <p className="text-slate-600 text-sm leading-relaxed max-w-[220px]">{screen.description}</p>
+              <h3 className="text-base sm:text-lg font-bold text-[#0B3C5D] mb-2">{screen.title}</h3>
+              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-[220px] mx-auto">{screen.description}</p>
             </div>
           ))}
         </div>
 
         {/* App Store Buttons */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
+        <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-4 sm:gap-6">
           <a
             href="#"
-            className="px-8 py-4 bg-black text-white rounded-xl font-semibold hover:bg-gray-800 transition-colors flex items-center gap-3"
+            className="px-6 sm:px-8 py-3 sm:py-4 bg-black text-white rounded-xl font-semibold hover:bg-gray-800 transition-colors flex items-center justify-center gap-3"
           >
             <Apple className="w-8 h-8 flex-shrink-0" strokeWidth={2} />
             <span className="text-left">
@@ -108,7 +108,7 @@ export default function MobilePreview() {
           </a>
           <a
             href="#"
-            className="px-8 py-4 bg-black text-white rounded-xl font-semibold hover:bg-gray-800 transition-colors flex items-center gap-3"
+            className="px-6 sm:px-8 py-3 sm:py-4 bg-black text-white rounded-xl font-semibold hover:bg-gray-800 transition-colors flex items-center justify-center gap-3"
           >
             <Play className="w-8 h-8 flex-shrink-0" strokeWidth={2} />
             <span className="text-left">

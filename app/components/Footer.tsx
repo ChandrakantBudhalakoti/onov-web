@@ -6,15 +6,15 @@ export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-200">
       {/* Newsletter Section */}
-      <div className="bg-gradient-to-r from-gray-50 to-white border-b border-gray-200 px-6 py-12">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-          <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Stay Informed.</h3>
+      <div className="bg-gradient-to-r from-gray-50 to-white border-b border-gray-200 px-4 sm:px-6 py-8 sm:py-12">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8">
+          <div className="text-center md:text-left">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Stay Informed.</h3>
             <p className="text-gray-600">
               Subscribe to our newsletter for the latest platform updates and political engagement insights.
             </p>
           </div>
-          <div className="flex w-full md:w-auto gap-2">
+          <div className="flex flex-col sm:flex-row w-full md:w-auto gap-2 min-w-0">
             <input
               type="email"
               placeholder="Enter your email"
@@ -29,8 +29,8 @@ export default function Footer() {
       </div>
 
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 mb-10 sm:mb-12">
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
@@ -102,7 +102,7 @@ export default function Footer() {
         </div>
 
         {/* Social Icons */}
-        <div className="py-8 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="py-6 sm:py-8 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-4">
           <div className="flex gap-4">
             <a href="https://twitter.com/onov" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#2563EB] hover:text-white transition-colors">
               <Twitter className="w-5 h-5" />
@@ -122,11 +122,11 @@ export default function Footer() {
           </div>
 
           {/* Copyright */}
-          <div className="flex flex-col md:flex-row items-center gap-8 text-sm text-gray-600">
+          <div className="flex flex-col md:flex-row items-center gap-4 sm:gap-8 text-sm text-gray-600 text-center md:text-left">
             <p className="flex items-center gap-1">
               <span>©</span> {currentYear} ONOV INC. BUILT WITH PRECISION IN THE US
             </p>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
               <a href="/privacy-policy" className="hover:text-[#2563EB] transition-colors">PRIVACY POLICY</a>
               <a href="/terms-of-service" className="hover:text-[#2563EB] transition-colors">TERMS OF SERVICE</a>
               <a href="/cookies" className="hover:text-[#2563EB] transition-colors">COOKIES</a>

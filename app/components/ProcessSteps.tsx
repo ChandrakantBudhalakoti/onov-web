@@ -33,17 +33,17 @@ const steps = [
 
 export default function ProcessSteps() {
   return (
-    <section className="py-20 px-6 bg-white">
+    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-16">
           <span className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">
             THE PROCESS
           </span>
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-[#0B3C5D] mt-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#0B3C5D] mt-4 px-2">
             Four Steps to Influence.
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-2">
             Joining ONOV is simple, secure, and designed to get you connected within minutes.
           </p>
         </div>
@@ -54,7 +54,7 @@ export default function ProcessSteps() {
           <div className="hidden lg:block absolute top-24 left-0 right-0 h-0.5 bg-gray-200" />
 
           {/* Steps Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 relative">
             {steps.map((step, index) => (
               <div key={index} className="flex flex-col items-center text-center">
                 {/* Number Circle - above icon */}
@@ -64,14 +64,14 @@ export default function ProcessSteps() {
 
                 {/* Icon - rounded square with colored background */}
                 <div
-                  className={`w-32 h-32 rounded-2xl flex items-center justify-center text-white mb-6 ${step.color}`}
+                  className={`w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-xl sm:rounded-2xl flex items-center justify-center text-white mb-4 sm:mb-6 ${step.color}`}
                 >
-                  <step.Icon className="w-14 h-14" strokeWidth={2} />
+                  <step.Icon className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14" strokeWidth={2} />
                 </div>
 
                 {/* Step Content */}
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h3>
-                <p className="text-gray-600 leading-relaxed text-sm mb-6">{step.description}</p>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">{step.title}</h3>
+                <p className="text-gray-600 leading-relaxed text-sm mb-4 sm:mb-6 px-2">{step.description}</p>
 
                 {/* Checkmark - all steps */}
                 <div className="w-8 h-8 rounded-full bg-[#7DD3FC] flex items-center justify-center">
@@ -82,8 +82,8 @@ export default function ProcessSteps() {
           </div>
 
           {/* Bottom Indicator Section */}
-          <div className="mt-16 bg-white border border-gray-200 rounded-xl px-8 py-6 shadow-sm">
-            <div className="flex flex-wrap justify-center items-center gap-12">
+          <div className="mt-10 sm:mt-16 bg-white border border-gray-200 rounded-xl px-4 sm:px-8 py-4 sm:py-6 shadow-sm">
+            <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-12">
               <div className="flex flex-col items-center gap-2">
                 <div className="w-12 h-1 rounded bg-teal-400" />
                 <span className="text-xs font-bold uppercase tracking-widest text-gray-600">ONBOARDING</span>

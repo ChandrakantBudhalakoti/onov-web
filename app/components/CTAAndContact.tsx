@@ -28,7 +28,7 @@ export default function CTAAndContact() {
   return (
     <>
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#0B3C5D] to-[#0D4A70] rounded-3xl mx-6 lg:mx-auto lg:max-w-7xl lg:my-12">
+      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-gradient-to-br from-[#0B3C5D] to-[#0D4A70] rounded-2xl sm:rounded-3xl mx-4 sm:mx-6 lg:mx-auto lg:max-w-7xl lg:my-12">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 mb-4">
             <div className="w-1 h-1 rounded-full bg-blue-300"></div>
@@ -37,7 +37,7 @@ export default function CTAAndContact() {
             </span>
           </div>
 
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 px-2">
             Join the Next
             <br />
             Generation
@@ -45,7 +45,7 @@ export default function CTAAndContact() {
             <span className="text-[#2563EB]">Social Platform.</span>
           </h2>
 
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
+          <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto mb-6 sm:mb-8 px-2">
             Experience the power of secure, community-driven political engagement today. Get started with your professional profile in minutes.
           </p>
 
@@ -62,9 +62,9 @@ export default function CTAAndContact() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6 bg-white">
+      <section id="contact" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12">
             {/* Left - Contact Info */}
             <div>
               <div className="inline-flex items-center gap-2 mb-4">
@@ -74,7 +74,7 @@ export default function CTAAndContact() {
                 </span>
               </div>
 
-              <h2 className="text-4xl lg:text-5xl font-bold mb-8">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8">
                 Let's Start a
                 <br />
                 <span className="text-[#2563EB]">Conversation</span>.
@@ -123,9 +123,9 @@ export default function CTAAndContact() {
             </div>
 
             {/* Right - Contact Form */}
-            <div className="bg-gradient-to-b from-gray-50 to-white border border-gray-200 rounded-2xl p-8">
+            <div className="bg-gradient-to-b from-gray-50 to-white border border-gray-200 rounded-2xl p-4 sm:p-6 lg:p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="firstName" className="block text-xs font-bold uppercase tracking-widest text-gray-600 mb-2">
                       First Name

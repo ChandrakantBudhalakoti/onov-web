@@ -13,6 +13,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export const metadata: Metadata = {
   title: "ONOV - Where Conversations Shape the Future",
   description: "Engage in debates, connect with communities, share ideas, and stay informed in real time with the most secure political social platform.",
@@ -31,9 +37,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <body
-        className={`${inter.variable} ${geistMono.variable} antialiased bg-white text-gray-900`}
+        className={`${inter.variable} ${geistMono.variable} antialiased bg-white text-gray-900 overflow-x-hidden min-h-screen`}
       >
         {children}
       </body>

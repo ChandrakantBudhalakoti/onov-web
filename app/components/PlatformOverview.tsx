@@ -42,26 +42,26 @@ const features = [
 
 export default function PlatformOverview() {
   return (
-    <section id="features" className="py-20 px-6 bg-white">
+    <section id="features" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-16">
           <div className="inline-flex items-center gap-2 mb-4">
             <div className="w-1 h-1 rounded-full bg-[#2563EB]"></div>
             <span className="text-xs font-bold uppercase tracking-widest text-gray-500">
               PLATFORM OVERVIEW
             </span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 px-2">
             One Platform, <span className="text-[#2563EB]">Unlimited Reach</span>.
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-2">
             ONOV integrates everything you need to lead, influence, and connect in the modern political landscape.
           </p>
         </div>
 
         {/* Feature Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {features.map((feature, index) => (
             <div
               key={index}

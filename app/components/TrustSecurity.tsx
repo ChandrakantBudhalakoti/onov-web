@@ -16,9 +16,9 @@ const compliances = [
 
 export default function TrustSecurity() {
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-[#0B3C5D] via-[#0D4A70] to-[#1a5a8a]">
+    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-gradient-to-br from-[#0B3C5D] via-[#0D4A70] to-[#1a5a8a]">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 items-center">
           {/* Left Content */}
           <div>
             <div className="inline-flex items-center gap-2 mb-4">
@@ -28,18 +28,18 @@ export default function TrustSecurity() {
               </span>
             </div>
 
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
               Your Trust is Our
               <br />
               <span className="text-[#2563EB]">Core Responsibility</span>.
             </h2>
 
-            <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 leading-relaxed">
               ONOV is engineered from the ground up to be the world's most secure and trustworthy political social platform.
             </p>
 
             {/* Compliance Badges */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 sm:mb-8">
               {compliances.map((compliance, index) => (
                 <div key={index} className="flex items-center gap-3 text-white">
                   <div className="w-6 h-6 rounded-full bg-[#2563EB] flex items-center justify-center flex-shrink-0">
@@ -52,7 +52,7 @@ export default function TrustSecurity() {
           </div>
 
           {/* Right - Security Features Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {securityFeatures.map((feature, index) => (
               <div
                 key={index}

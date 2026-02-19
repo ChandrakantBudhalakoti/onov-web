@@ -1,6 +1,14 @@
 @import "tailwindcss";
 
 :root {
+  /* ONOV Color Palette */
+  --color-primary: #0B3C5D;
+  --color-primary-light: #0D4A70;
+  --color-accent: #2563EB;
+  --color-accent-light: #3B82F6;
+  --color-red-accent: #DC2626;
+  --color-dark-bg: #0F172A;
+
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -8,6 +16,12 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-onov-primary: var(--color-primary);
+  --color-onov-primary-light: var(--color-primary-light);
+  --color-onov-accent: var(--color-accent);
+  --color-onov-accent-light: var(--color-accent-light);
+  --color-onov-red: var(--color-red-accent);
+  --color-onov-dark-bg: var(--color-dark-bg);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -19,8 +33,57 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+/* Utility Classes */
+.gradient-accent {
+  background: linear-gradient(135deg, #0B3C5D 0%, #2563EB 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #0B3C5D 0%, #2563EB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-padding {
+  padding: 6rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 4rem 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+  }
 }

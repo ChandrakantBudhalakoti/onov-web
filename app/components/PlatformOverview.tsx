@@ -22,7 +22,7 @@ const features = [
   },
   {
     Icon: Calendar,
-    image: '/assets/images/Events and Ticketing.jpeg',
+    image: '/assets/images/Events and Ticketing.jpg',
     title: 'Events and Ticketing',
     description: 'Organize and promote local or national events with integrated ticketing and RSVP system.',
   },

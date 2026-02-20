@@ -4,22 +4,22 @@ import { Apple, Play } from 'lucide-react';
 const screens = [
   {
     title: 'Feed Screen',
-    image: '/assets/images/Feed Screen.jpeg',
+    image: '/assets/images/Feed Screen.png',
     description: 'A curated and engagement-driven feed for all your political news and social updates.',
   },
   {
     title: 'Debate Screen',
-    image: '/assets/images/Debate Screen.jpeg',
+    image: '/assets/images/Debate Screen.png',
     description: 'High-stakes live debates with interactive polling and community feedback.',
   },
   {
     title: 'Community Screen',
-    image: '/assets/images/Community Screen.jpeg',
+    image: '/assets/images/Community Screen.png',
     description: 'Easily manage and navigate through your joined political and local communities.',
   },
   {
     title: 'Profile Screen',
-    image: '/assets/images/Profile Screen.jpeg',
+    image: '/assets/images/Profile Screen.png',
     description: 'Showcase your influence, verified credentials, and engagement history.',
   },
 ];
@@ -80,7 +80,8 @@ export default function MobilePreview() {
                       alt={screen.title}
                       fill
                       className="object-cover object-top"
-                      sizes="200px"
+                      sizes="(max-width: 640px) 280px, (max-width: 768px) 340px, 400px"
+                      quality={90}
                     />
                   </div>
                 </div>

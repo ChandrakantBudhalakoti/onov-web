@@ -16,7 +16,7 @@ const features = [
   },
   {
     Icon: Users,
-    image: '/assets/images/Community Creation.jpeg',
+    image: '/assets/images/Community Creation.png',
     title: 'Community Creation',
     description: 'Build and manage your own political or social communities with robust management tools.',
   },
@@ -34,7 +34,7 @@ const features = [
   },
   {
     Icon: Briefcase,
-    image: '/assets/images/Business Profiles.jpeg',
+    image: '/assets/images/Business Profiles.png',
     title: 'Business Profiles',
     description: 'Professional profiles for organizations and businesses to promote their vision.',
   },

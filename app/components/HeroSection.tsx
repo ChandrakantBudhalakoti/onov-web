@@ -68,7 +68,7 @@ export default function HeroSection() {
                 {/* Phone Screen - banner background */}
                 <div className="w-full h-full relative overflow-hidden">
                   <Image
-                    src="/assets/images/banner.jpeg"
+                    src="/assets/images/banner.png"
                     alt="App preview"
                     fill
                     className="object-cover"

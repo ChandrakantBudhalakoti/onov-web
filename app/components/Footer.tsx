@@ -129,8 +129,8 @@ export default function Footer() {
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
               <a href="/privacy-policy" className="hover:text-[#2563EB] transition-colors">PRIVACY POLICY</a>
               <a href="/terms-of-service" className="hover:text-[#2563EB] transition-colors">TERMS OF SERVICE</a>
-              <a href="/political-content-policy" className="hover:text-[#2563EB] transition-colors">POLITICAL CONTENT POLICY</a>
-              <a href="/cookies" className="hover:text-[#2563EB] transition-colors">COOKIES</a>
+              {/* <a href="/political-content-policy" className="hover:text-[#2563EB] transition-colors">POLITICAL CONTENT POLICY</a> */}
+              {/* <a href="/cookies" className="hover:text-[#2563EB] transition-colors">COOKIES</a> */}
             </div>
           </div>
         </div>

@@ -89,13 +89,13 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-gray-600 flex-shrink-0" />
-                <a href="tel:+15551234567" className="text-gray-600 hover:text-[#2563EB] transition-colors">
-                  +1 (555) 123-4567
+                <a href="tel:+12124014818" className="text-gray-600 hover:text-[#2563EB] transition-colors">
+                  212-401-4818
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-gray-600 flex-shrink-0" />
-                <span className="text-gray-600">San Francisco, CA</span>
+                <span className="text-gray-600">175 Fulton Ave suite 302, Hempstead NY 11550</span>
               </li>
             </ul>
           </div>

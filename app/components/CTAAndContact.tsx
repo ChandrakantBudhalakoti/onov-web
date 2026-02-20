@@ -104,8 +104,8 @@ export default function CTAAndContact() {
                   </div>
                   <div>
                     <div className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Call Our Office</div>
-                    <a href="tel:+15551234567" className="text-lg font-bold text-gray-900 hover:text-[#2563EB]">
-                      +1 (555) 123-4567
+                    <a href="tel:+12124014818" className="text-lg font-bold text-gray-900 hover:text-[#2563EB]">
+                      212-401-4818
                     </a>
                   </div>
                 </div>
@@ -116,7 +116,7 @@ export default function CTAAndContact() {
                   </div>
                   <div>
                     <div className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Global HQ</div>
-                    <p className="text-lg font-bold text-gray-900">San Francisco, CA</p>
+                    <p className="text-lg font-bold text-gray-900">175 Fulton Ave suite 302, Hempstead NY 11550</p>
                   </div>
                 </div>
               </div>

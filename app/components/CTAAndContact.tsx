@@ -92,8 +92,8 @@ export default function CTAAndContact() {
                   </div>
                   <div>
                     <div className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Email Our Team</div>
-                    <a href="mailto:hello@onov.com" className="text-lg font-bold text-gray-900 hover:text-[#2563EB]">
-                      hello@onov.com
+                    <a href="mailto:net-support@onov.com" className="text-lg font-bold text-gray-900 hover:text-[#2563EB]">
+                      net-support@onov.com
                     </a>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ export default function CTAAndContact() {
                   <div>
                     <div className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Call Our Office</div>
                     <a href="tel:+12124014818" className="text-lg font-bold text-gray-900 hover:text-[#2563EB]">
-                      212-401-4818
+                      +1 (212) 401-4818
                     </a>
                   </div>
                 </div>
@@ -116,7 +116,7 @@ export default function CTAAndContact() {
                   </div>
                   <div>
                     <div className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Global HQ</div>
-                    <p className="text-lg font-bold text-gray-900">175 Fulton Ave suite 302, Hempstead NY 11550</p>
+                    <p className="text-lg font-bold text-gray-900">175 Fulton Ave Suite 302, Hempstead, NY 11550</p>
                   </div>
                 </div>
               </div>

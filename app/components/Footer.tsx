@@ -70,10 +70,10 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-gray-900 mb-4">RESOURCES</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="/help" className="text-gray-600 hover:text-[#2563EB] transition-colors">Help Center</a></li>
-              <li><a href="/legal" className="text-gray-600 hover:text-[#2563EB] transition-colors">Legal Center</a></li>
+              <li><a href="/terms-of-service" className="text-gray-600 hover:text-[#2563EB] transition-colors">Terms of Service</a></li>
               <li><a href="/privacy" className="text-gray-600 hover:text-[#2563EB] transition-colors">Privacy Policy</a></li>
-              <li><a href="/press-kit" className="text-gray-600 hover:text-[#2563EB] transition-colors">Press Kit</a></li>
+              <li><a href="/political-content-policy" className="text-gray-600 hover:text-[#2563EB] transition-colors">Political Content Policy</a></li>
+              <li><a href="/data-deletion" className="text-gray-600 hover:text-[#2563EB] transition-colors">Data Deletion</a></li>
             </ul>
           </div>
 
@@ -83,19 +83,19 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-gray-600 flex-shrink-0" />
-                <a href="mailto:hello@onov.com" className="text-gray-600 hover:text-[#2563EB] transition-colors">
-                  hello@onov.com
+                <a href="mailto:net-support@onov.com" className="text-gray-600 hover:text-[#2563EB] transition-colors">
+                  net-support@onov.com
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-gray-600 flex-shrink-0" />
                 <a href="tel:+12124014818" className="text-gray-600 hover:text-[#2563EB] transition-colors">
-                  212-401-4818
+                  +1 (212) 401-4818
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-gray-600 flex-shrink-0" />
-                <span className="text-gray-600">175 Fulton Ave suite 302, Hempstead NY 11550</span>
+                <span className="text-gray-600">175 Fulton Ave Suite 302, Hempstead, NY 11550</span>
               </li>
             </ul>
           </div>
@@ -129,6 +129,7 @@ export default function Footer() {
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
               <a href="/privacy-policy" className="hover:text-[#2563EB] transition-colors">PRIVACY POLICY</a>
               <a href="/terms-of-service" className="hover:text-[#2563EB] transition-colors">TERMS OF SERVICE</a>
+              <a href="/political-content-policy" className="hover:text-[#2563EB] transition-colors">POLITICAL CONTENT POLICY</a>
               <a href="/cookies" className="hover:text-[#2563EB] transition-colors">COOKIES</a>
             </div>
           </div>

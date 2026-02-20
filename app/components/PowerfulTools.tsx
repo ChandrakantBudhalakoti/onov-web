@@ -58,10 +58,10 @@ export default function PowerfulTools() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             Powerful Tools for
             <br />
-            <span className="text-[#2563EB]">Modern Leadership.</span>
+            <span className="text-[#2563EB]">Every Creator.</span>
           </h2>
           <p className="text-base sm:text-lg text-gray-300 max-w-3xl mb-6 sm:mb-8">
-            Experience the next generation of social engagement. Every tool you need, integrated into one seamless platform.
+            Debate, stream, create, and monetize. Every tool you need — politics, entertainment, family, and business — in one seamless platform.
           </p>
           <button className="w-full sm:w-auto px-8 py-3 bg-[#2563EB] text-white rounded-full font-semibold hover:bg-[#3B82F6] transition-colors uppercase text-sm font-bold tracking-wide">
             Explore All Features

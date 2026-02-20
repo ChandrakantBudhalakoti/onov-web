@@ -2,6 +2,8 @@ import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import PlatformOverview from './components/PlatformOverview';
 import PowerfulTools from './components/PowerfulTools';
+import EntertainmentSportsSection from './components/EntertainmentSportsSection';
+import FamilyHobbiesSection from './components/FamilyHobbiesSection';
 import ProcessSteps from './components/ProcessSteps';
 import MobilePreview from './components/MobilePreview';
 import EnterpriseSolutions from './components/EnterpriseSolutions';
@@ -16,6 +18,8 @@ export default function Home() {
       <HeroSection />
       <PlatformOverview />
       <PowerfulTools />
+      <EntertainmentSportsSection />
+      <FamilyHobbiesSection />
       <ProcessSteps />
       <MobilePreview />
       <EnterpriseSolutions />

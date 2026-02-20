@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,11 +12,15 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-[#0B3C5D] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">O</span>
-            </div>
-            <span className="font-bold text-xl text-[#0B3C5D]">ONOV</span>
+          <Link href="/" className="relative h-10 w-32 flex-shrink-0">
+            <Image
+              src="/assets/images/ONOV logo.png"
+              alt="ONOV"
+              fill
+              className="object-contain object-left"
+              sizes="128px"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}

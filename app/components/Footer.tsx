@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import Image from 'next/image';
 import { Mail, Phone, MapPin, Twitter, Instagram, Linkedin, Facebook, Github } from 'lucide-react';
 
 export default function Footer() {
@@ -33,12 +35,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 mb-10 sm:mb-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-[#0B3C5D] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">O</span>
-              </div>
-              <span className="font-bold text-xl text-[#0B3C5D]">ONOV</span>
-            </div>
+            <Link href="/" className="relative h-10 w-32 mb-4 flex group opacity-90 hover:opacity-100 transition-opacity">
+              <Image
+                src="/assets/images/ONOV logo.png"
+                alt="ONOV"
+                fill
+                className="object-contain object-left"
+                sizes="128px"
+              />
+            </Link>
             <p className="text-gray-600 text-sm leading-relaxed">
               Empowering global conversations with secure, scalable, and community-driven political engagement technology.
             </p>
@@ -59,10 +64,11 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-gray-900 mb-4">PLATFORM</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#features" className="text-gray-600 hover:text-[#2563EB] transition-colors">Features</a></li>
-              <li><a href="#features" className="text-gray-600 hover:text-[#2563EB] transition-colors">How It Works</a></li>
-              <li><a href="/community" className="text-gray-600 hover:text-[#2563EB] transition-colors">Community Hub</a></li>
-              <li><a href="/live-streaming" className="text-gray-600 hover:text-[#2563EB] transition-colors">Live Streaming</a></li>
+              <li><a href="/politics" className="text-gray-600 hover:text-[#2563EB] transition-colors">Politics</a></li>
+              <li><a href="/entertainment-sports" className="text-gray-600 hover:text-[#2563EB] transition-colors">Entertainment & Sports</a></li>
+              <li><a href="/family-hobbies" className="text-gray-600 hover:text-[#2563EB] transition-colors">Family & Hobbies</a></li>
+              <li><a href="/business" className="text-gray-600 hover:text-[#2563EB] transition-colors">Business</a></li>
+              {/* <li><a href="#features" className="text-gray-600 hover:text-[#2563EB] transition-colors">Features</a></li> */}
             </ul>
           </div>
 
